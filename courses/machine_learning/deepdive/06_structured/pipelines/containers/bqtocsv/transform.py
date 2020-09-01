@@ -43,6 +43,7 @@ def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
 
   if in_test_mode:
     print('Launching local job ... hang on')
+    print('Launching local job ... hang on a bit more')
     OUTPUT_DIR = './preproc'
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     os.makedirs(OUTPUT_DIR)
