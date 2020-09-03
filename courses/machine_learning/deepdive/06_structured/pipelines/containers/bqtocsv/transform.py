@@ -109,6 +109,7 @@ def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
   with open("/output.txt", "w") as output_file:
     output_file.write(BUCKET)
     print("Done!")
+    print("Done!")
 
 
 if __name__ == '__main__':
