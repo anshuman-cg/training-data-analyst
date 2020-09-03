@@ -40,10 +40,9 @@ def to_csv(rowdict):
 def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
   import shutil, os, subprocess
   job_name = 'preprocess-babyweight-features' + '-' + datetime.datetime.now().strftime('%y%m%d-%H%M%S')
-
+  OUTPUT_DIR = './preproc'
   if in_test_mode:
     print('Launching local job ... hang on')
-    OUTPUT_DIR = './preproc'
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     os.makedirs(OUTPUT_DIR)
   else:
