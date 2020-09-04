@@ -110,6 +110,7 @@ def preprocess(in_test_mode, PROJECT, BUCKET, start_year):
     output_file.write(BUCKET)
     print("Done!")
     print("Done!")
+    print("Done!")
 
 
 if __name__ == '__main__':
